@@ -8,9 +8,13 @@ a{
 	outline:none;
 }
 
+.logo{
+	margin-left: 40px;
+}
+
 .navbar{
 	background-color: white;
-	height: 5vw;
+	height: 7vw;
 }
 
 .navbar.navbar-default {
@@ -26,14 +30,8 @@ a{
 
 
 .title{
-	font-size: 4vw;
-	padding-top: 70px;
-}
-
-@media only screen and (max-width: 768px){
-	.title{
-		font-size: 10vw;
-	}
+	font-size: 5vw;
+	padding-top: 90px;
 }
 
 .row{
@@ -57,8 +55,22 @@ a{
 	background-color: black;
 	color: white;
 	border: 1px solid black;
-	margin-left: 45%;
+	margin-left: 42%;
 	font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 1024px){
+	.card{
+		margin-left: 120px;
+	}
+	.title{
+		font-size: 7vw;
+	}
+	.button{
+		height: 10vw;
+		width: 20vw;
+		font-size: 2.5vw;
+	}
 }
 
 .button:hover{
