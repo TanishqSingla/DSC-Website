@@ -86,7 +86,6 @@
 		<input type="button" class="btn button" value="View More" align="center">
 	</div>
 
-
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
@@ -103,6 +102,17 @@
 		  	$(".button").css({"background-color": "black", "color" : "white" , "outline" : "none"});
 		    $(".board").toggle();
 		  });
+
+		var lastScrollTop = 0;
+		$(window).scroll(function(event){
+			var st = $(this).scrollTop();
+			if (st > lastScrollTop){
+				$(".navbar").css({"box-shadow":"0 2px 4px 0 rgba(169,169,169)"});
+			} else {
+				$(".navbar").css({"box-shadow":"0 2px 4px 0 rgba(255,255,255)"});
+			}
+			   lastScrollTop = st;
+			});
 		});
 	</script>
 
