@@ -8,13 +8,18 @@ a{
 	outline:none;
 }
 
+.landing{
+	padding-top: 90px;
+	height: 700px;
+}
+
 .logo{
 	margin-left: 40px;
 }
 
 .navbar{
 	background-color: white;
-	height: 7vw;
+	height: 5vw;
 }
 
 .navbar.navbar-default {
@@ -26,12 +31,27 @@ a{
 .navbar-brand{
 	padding-top: 2vw;
 	font-size: 3vw;
+	color:black;
 }
 
+.title_div{
+	width: 100%;
+	padding-top: 0%;
+	padding-left: 8%;
+}
 
 .title{
-	font-size: 4.5vw;
-	padding-top: 90px;
+	font-size: 4vw;
+	padding-top: 170px;
+}
+
+.title_sub{
+	font-size: 2vw;
+}
+
+.landing_img{
+	padding-top: 80px;
+	padding-left: 50px;
 }
 
 .row{
@@ -57,6 +77,30 @@ a{
 	border: 1px solid black;
 	margin-left: 42%;
 	font-size: 1.5vw;
+}
+
+@media only screen and (max-width: 425px){
+	.title{
+		font-size: 10vw!important;
+	}
+	.title_sub{
+		font-size: 7vw!important;
+	}
+	.landing_img{
+		padding-top: 0!important;
+	}
+	.card{
+		margin-left: 10vw!important;
+	}
+}
+
+@media only screen and (max-width: 768px){
+	.title{
+		padding-top: 70px!important;
+	}
+	.landing_img{
+		padding-top: 0!important;
+	}
 }
 
 @media only screen and (max-width: 1024px){
