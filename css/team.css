@@ -167,7 +167,7 @@ a{
 	}
 	.btn{
 		height: 7vw!important;
-		width: 15vw!important;
+		width: 17vw!important;
 		margin-left: 40%!important;
 		font-size: 3vw!important;
 		padding-left: 5px;
@@ -182,16 +182,11 @@ a{
 	.title{
 		font-size: 7vw;
 	}
-	.button{
-		height: 10vw;
-		width: 20vw;
-		font-size: 2.5vw;
-	}
 }
 
 .btn{
 	height: 3vw;
-	width: 10vw;
+	width: 14vw;
 	margin-top: 175px;
 	margin-left: 45%;
 	margin-bottom: 20px;
