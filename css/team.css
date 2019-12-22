@@ -59,13 +59,18 @@ a{
 	width: 100%;
 }
 
-.card{
+.row1{
+	margin-top: 3vw;
 	height:250px;
-	width:250px;
-	margin: 2vw;
-	margin-left: 5vw;
+}
+
+.card{
+	height:225px;
+	width:225px;
+	margin-left: 7vw;
 	border-radius: 50%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5); 
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+	align-items: center; 
 }
 
 .button{
@@ -79,24 +84,47 @@ a{
 	font-size: 1.5vw;
 }
 
+@media only screen and (max-width: 760px){
+	.card{
+		margin-left: 35%!important;
+		margin-top: 20px!important;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.card{
+		margin-top: 20px!important;
+		margin-left: 10vw!important;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 590px){
+	.card{
+		margin-top: 20px!important;
+		margin-left: 20vw!important;
+		align-items: center;
+	}
+}
+
 @media only screen and (max-width: 425px){
 	.title{
 		font-size: 10vw!important;
 	}
 	.title_sub{
-		font-size: 7vw!important;
+		font-size: 30px!important;
 	}
 	.landing_img{
 		padding-top: 0!important;
 	}
-	.card{
-		margin-left: 10vw!important;
-	}
 }
-
 @media only screen and (max-width: 768px){
 	.title{
 		padding-top: 70px!important;
+	}
+
+	.title_sub{
+		font-size: 30px!important;
 	}
 	.landing_img{
 		padding-top: 0!important;
@@ -104,9 +132,7 @@ a{
 }
 
 @media only screen and (max-width: 1024px){
-	.card{
-		margin-left: 120px;
-	}
+	
 	.title{
 		font-size: 7vw;
 	}
