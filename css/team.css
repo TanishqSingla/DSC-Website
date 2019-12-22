@@ -64,6 +64,14 @@ a{
 	height:250px;
 }
 
+.row2{
+	padding-top: 150px;
+}
+
+.row3{
+	padding-top: 150px;
+}
+
 .card{
 	height:225px;
 	width:225px;
@@ -71,6 +79,23 @@ a{
 	border-radius: 50%;
 	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
 	align-items: center; 
+}
+
+.user{
+	height: 100%;
+	width: 100%;
+}
+
+.user_name{
+	padding-top: 10px;
+	font-size: 2.5vw;
+	color: black;
+	margin:0;
+}
+
+.user_pos{
+	font-size: 1.5vw;
+	color:grey;
 }
 
 .button{
@@ -117,17 +142,38 @@ a{
 	.landing_img{
 		padding-top: 0!important;
 	}
+	.row3{
+		padding-top: 80px!important;
+	}
 }
 @media only screen and (max-width: 768px){
 	.title{
 		padding-top: 70px!important;
 	}
-
 	.title_sub{
 		font-size: 30px!important;
 	}
 	.landing_img{
 		padding-top: 0!important;
+	}
+	.col-lg-4{
+		padding-top: 50px;
+	}
+	.user_name{
+		font-size: 5vw;
+	}
+	.user_pos{
+		font-size: 4vw;
+	}
+	.btn{
+		height: 7vw!important;
+		width: 15vw!important;
+		margin-left: 40%!important;
+		font-size: 3vw!important;
+		padding-left: 5px;
+	}
+	.row3{
+		padding-top: 90px!important;
 	}
 }
 
@@ -143,12 +189,23 @@ a{
 	}
 }
 
-.button:hover{
-	color: white;
-	outline: none;
+.btn{
+	height: 3vw;
+	width: 10vw;
+	margin-top: 175px;
+	margin-left: 45%;
+	margin-bottom: 20px;
+	font-size: 1.5vw;
+	color:white;
+	background-color: black;
 }
 
-.board{
+.btn:hover{
+	color:white;
+	background-color: black;
+}
+
+.row3{
 	display: none;
 }
 

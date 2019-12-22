@@ -30,40 +30,92 @@
 	<div class="row row1">
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 			<div class="card text-center">
-				
+				<img src="../Images/user2.png" class="user">
+				<p class="user_name">Name</p>
+				<p class="user_pos">Position</p>
 			</div>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 			<div class="card text-center">
-				
+				<img src="../Images/user2.png" class="user">
+				<p class="user_name">Name</p>
+				<p class="user_pos">Position</p>
 			</div>
 		</div>
 		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
 			<div class="card text-center">
-				
+				<img src="../Images/user2.png" class="user">
+				<p class="user_name">Name</p>
+				<p class="user_pos">Position</p>
 			</div>
 		</div>
 	</div>
 
-	<!-- <div>
-		<input type="button" class="btn button" value="View More" align="center">
-	</div> -->
+	<div class="row row2">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="card text-center">
+				<img src="../Images/user2.png" class="user">
+				<p class="user_name">Name</p>
+				<p class="user_pos">Position</p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="card text-center">
+				<img src="../Images/user2.png" class="user">
+				<p class="user_name">Name</p>
+				<p class="user_pos">Position</p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="card text-center">
+				<img src="../Images/user2.png" class="user">
+				<p class="user_name">Name</p>
+				<p class="user_pos">Position</p>
+			</div>
+		</div>
+	</div>
+
+	<div class="row row3">
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="card text-center">
+				<img src="../Images/user2.png" class="user">
+				<p class="user_name">Name</p>
+				<p class="user_pos">Position</p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="card text-center">
+				<img src="../Images/user2.png" class="user">
+				<p class="user_name">Name</p>
+				<p class="user_pos">Position</p>
+			</div>
+		</div>
+		<div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+			<div class="card text-center">
+				<img src="../Images/user2.png" class="user">
+				<p class="user_name">Name</p>
+				<p class="user_pos">Position</p>
+			</div>
+		</div>
+	</div>
+
+	<input type="button" name="Show All" class="btn" value="Show All">
 
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
 	<script type="text/javascript">
 		$(document).ready(function(){
-		  $(".button").click(function(){
-		  	var x = $(".button").val();
-		  	if(x == "View More"){
-		  		$(".button").prop('value' , 'View Less');
+		  $(".btn").click(function(){
+		  	var x = $(".btn").val();
+		  	if(x == "Show All"){
+		  		$(".btn").prop('value' , 'Show Less');
 		    }
 		    else{
-		    	$(".button").prop('value' , 'View More');
+		    	$(".btn").prop('value' , 'Show More');
 		    }
-		  	$(".button").css({"background-color": "black", "color" : "white" , "outline" : "none"});
-		    $(".board").toggle();
+		  	$(".btn").css({"background-color": "black", "color" : "white" , "outline" : "none"});
+		    $(".row3").toggle();
 		  });
 
 		var lastScrollTop = 0;
