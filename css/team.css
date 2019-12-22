@@ -98,17 +98,6 @@ a{
 	color:grey;
 }
 
-.button{
-	height: 4vw;
-	width: 15vw;
-	outline: none;
-	background-color: black;
-	color: white;
-	border: 1px solid black;
-	margin-left: 42%;
-	font-size: 1.5vw;
-}
-
 @media only screen and (max-width: 760px){
 	.card{
 		margin-left: 35%!important;
@@ -167,7 +156,7 @@ a{
 	}
 	.btn{
 		height: 7vw!important;
-		width: 19vw!important;
+		width: 20vw!important;
 		margin-left: 40%!important;
 		font-size: 3vw!important;
 		padding-left: 5px;
