@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Profile</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="../Images/icon.png" type="image/png" />
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="../css/profile.css">
+</head>
+<body>
+	<nav class="navbar fixed-top">
+		<img src="../Images/icon.png" height="50" class="logo">
+	</nav>
+	<div class="container-fluid">
+		<div class="row row1">
+			<div class="col-lg-6 col-lg-6 col-sm-6 col-xs-12 d-flex justify-content-around align-items-center">
+				<img src="../Images/user2.png" class="user_img">
+			</div>
+			<div class="col-lg-6 col-lg-6 col-sm-6 col-xs-12 align-self-center">
+				<p class="user_name d-flex justify-content-around">Name</p>
+				<p class="user_email d-flex justify-content-around">Email</p>
+				<p class="user_des d-flex justify-content-around">Description</p>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-around event_att">
+				Event Attended
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row row2 align-items-center">
+			<div class="col-lg-3 col-lg-3 col-sm-6 col-xs-6 d-flex justify-content-around">
+				<div class="events">
+					<img src="../Images/gdg.jpg" class="event1">
+				</div>
+			</div>
+			<div class="col-lg-3 col-lg-3 col-sm-6 col-xs-6 d-flex justify-content-around">
+				<div class="events">
+					<img src="../Images/git.jpg" class="event2">
+				</div>
+			</div>
+			<div class="col-lg-3 col-lg-3 col-sm-6 col-xs-6 d-flex justify-content-around">
+				<div class="events">
+					<img src="../Images/dsc.jpeg" class="event3">
+				</div>
+			</div>
+			<div class="col-lg-3 col-lg-3 col-sm-6 col-xs-6 d-flex justify-content-around">
+				<div class="events">
+					<img src="../Images/flutter.jpg" class="event4">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid">
+		<div class="row row3">
+			<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 d-flex justify-content-around badges_earned">
+				Badges Earned
+			</div>
+		</div>
+	</div>
+	<div class="container-fluid p-50">
+		<div class="row align-items-center">
+			<div class="col-lg-3 col-lg-3 col-sm-6 col-xs-6 d-flex justify-content-around">
+				<div class="badges">
+					<img src="../Images/badge.jpeg" class="badge1">
+				</div>
+			</div>
+			<div class="col-lg-3 col-lg-3 col-sm-6 col-xs-6 d-flex justify-content-around">
+				<div class="badges">
+					<img src="../Images/badge.jpeg" class="badge2">
+				</div>
+			</div>
+			<div class="col-lg-3 col-lg-3 col-sm-6 col-xs-6 d-flex justify-content-around">
+				<div class="badges">
+					<img src="../Images/badge.jpeg" class="badge3">
+				</div>
+			</div>
+			<div class="col-lg-3 col-lg-3 col-sm-6 col-xs-6 d-flex justify-content-around">
+				<div class="badges">
+					<img src="../Images/badge.jpeg" class="badge4">
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function(){
+			var lastScrollTop = 0;
+			$(window).scroll(function(event){
+				var st = $(this).scrollTop();
+				if (st > lastScrollTop){
+					$(".navbar").css({"box-shadow":"0 2px 4px 0 rgb(211,211,211)"});
+				} else {
+					$(".navbar").css({"box-shadow":"0 2px 4px 0 rgba(255,255,255)"});
+				}
+				lastScrollTop = st;
+			});
+		});
+	</script>
+
+</body>
+</html>
