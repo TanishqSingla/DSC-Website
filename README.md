@@ -1,5 +1,5 @@
 # DSC-Website
 
-Website Link
+DSC Website Link
 
 https://saranshdawra.github.io/DSC-Website/index.html
