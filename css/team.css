@@ -59,24 +59,66 @@ a{
 	width: 100%;
 }
 
-.card{
+.row1{
+	margin-top: 3vw;
 	height:250px;
-	width:250px;
-	margin: 2vw;
-	margin-left: 5vw;
-	border-radius: 50%;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5); 
 }
 
-.button{
-	height: 4vw;
-	width: 15vw;
-	outline: none;
-	background-color: black;
-	color: white;
-	border: 1px solid black;
-	margin-left: 42%;
+.row2{
+	padding-top: 150px;
+}
+
+.row3{
+	padding-top: 150px;
+}
+
+.card{
+	height:225px;
+	width:225px;
+	margin-left: 7vw;
+	border-radius: 50%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, .5);
+	align-items: center; 
+}
+
+.user{
+	height: 100%;
+	width: 100%;
+}
+
+.user_name{
+	padding-top: 10px;
+	font-size: 2.5vw;
+	color: black;
+	margin:0;
+}
+
+.user_pos{
 	font-size: 1.5vw;
+	color:grey;
+}
+
+@media only screen and (max-width: 760px){
+	.card{
+		margin-left: 35%!important;
+		margin-top: 20px!important;
+	}
+}
+
+@media only screen and (max-width: 320px){
+	.card{
+		margin-top: 20px!important;
+		margin-left: 10vw!important;
+		align-items: center;
+	}
+}
+
+@media only screen and (max-width: 590px){
+	.card{
+		margin-top: 20px!important;
+		margin-left: 20vw!important;
+		align-items: center;
+	}
 }
 
 @media only screen and (max-width: 425px){
@@ -84,45 +126,70 @@ a{
 		font-size: 10vw!important;
 	}
 	.title_sub{
-		font-size: 7vw!important;
+		font-size: 30px!important;
 	}
 	.landing_img{
 		padding-top: 0!important;
 	}
-	.card{
-		margin-left: 10vw!important;
+	.row3{
+		padding-top: 80px!important;
 	}
 }
-
 @media only screen and (max-width: 768px){
 	.title{
 		padding-top: 70px!important;
 	}
+	.title_sub{
+		font-size: 30px!important;
+	}
 	.landing_img{
 		padding-top: 0!important;
+	}
+	.col-lg-4{
+		padding-top: 50px;
+	}
+	.user_name{
+		font-size: 5vw;
+	}
+	.user_pos{
+		font-size: 4vw;
+	}
+	.btn{
+		height: 7vw!important;
+		width: 20vw!important;
+		margin-left: 40%!important;
+		font-size: 3vw!important;
+		padding-left: 5px;
+	}
+	.row3{
+		padding-top: 90px!important;
 	}
 }
 
 @media only screen and (max-width: 1024px){
-	.card{
-		margin-left: 120px;
-	}
+	
 	.title{
 		font-size: 7vw;
 	}
-	.button{
-		height: 10vw;
-		width: 20vw;
-		font-size: 2.5vw;
-	}
 }
 
-.button:hover{
-	color: white;
-	outline: none;
+.btn{
+	height: 3vw;
+	width: 14vw;
+	margin-top: 175px;
+	margin-left: 45%;
+	margin-bottom: 20px;
+	font-size: 1.5vw;
+	color:white;
+	background-color: black;
 }
 
-.board{
+.btn:hover{
+	color:white;
+	background-color: black;
+}
+
+.row3{
 	display: none;
 }
 

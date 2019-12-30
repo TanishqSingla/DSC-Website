@@ -1,0 +1,489 @@
+/* 
+
+To Do: - 
+  1. We'll add Comments in proper way later for better understandings.
+  2. using Google sans fonts.
+  3. using Bootstrap 4 (latest version).
+  4. yet to link / add jquery libary for buttons and other features like animations etc. 
+  4. fontawesome libaray for icons etc.
+  5. still to do many things, dozens of improvements required.
+  - Sahildeep Singh
+  
+*/
+
+
+html,
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+:root {
+  font-size: 14px;
+}
+
+body {
+  font-family: "Google Sans", sans-serif;
+  font-size: 1rem;
+  color: #637282;
+  overflow-x: hidden;
+  font-weight: normal;
+  letter-spacing: -.3px;
+}
+
+.has-sticky-header {
+  padding-top: 72px;
+}
+
+first-letter {
+  color: #557DBF;
+  font-weight: 400
+}
+
+second-letter {
+  color: #FBBC12;
+  font-weight: 400;
+}
+
+third-letter {
+  color: #E1382B;
+  font-weight: 400;
+}
+
+forth-letter {
+  color: #189E59;
+  font-weight: 400;
+}
+
+a {
+  line-height: 1;
+  color: #2F5BE7;
+}
+
+button,
+.btn {
+  outline: none;
+  border: 0;
+}
+
+button:focus,
+.btn:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+  color: #1B2733;
+  font-family: "Google Sans", sans-serif;
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 25px
+}
+
+h1 {
+  line-height: 32px;
+}
+
+h2,
+.h2 {
+  line-height: 1.44;
+}
+
+p {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.lead {
+  font-weight: normal;
+  line-height: 29px;
+  text-align: left;
+}
+
+.custom-menu {
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+.custom-menu .nav-item .nav-link {
+  padding: 20px 15px;
+  text-transform: capitalize;
+  color: #637282;
+}
+
+.custom-menu .nav-item .nav-link:hover {
+  color: #1B2733;
+}
+
+.nav-item {
+  font-weight: bold;
+}
+
+.custom-menu__light {
+  background: #fff;
+}
+
+.event-button {
+  background: #2F5BE7;
+  font-weight: bold;
+  color: #FFFFFF;
+  padding: 8px 12px;
+  border-radius: 50px;
+  text-decoration: none;
+}
+
+.custom-menu__light .nav-link {
+  color: #1B2733;
+}
+
+.custom-menu__light .navbar-toggler {
+  border-color: transparent;
+}
+
+.navbar-toggler {
+  padding: 0;
+  width: 20px;
+  height: 15px;
+  position: relative;
+}
+
+.menu-icon {
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  color: #000;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+
+.menu-icon__circle {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #2F5BE7;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+.menu-icon__bar {
+  width: 100%;
+  height: 2px;
+  border-radius: 50px;
+  background: #fff;
+  display: block;
+  position: absolute;
+  left: 0;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+}
+
+.menu-icon__bar:nth-child(2) {
+  top: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.menu-icon__bar:nth-child(3) {
+  bottom: 0;
+}
+
+.navbar-toggler.menu-is-expanded {
+  z-index: 1;
+}
+
+.navbar-toggler.menu-is-expanded .menu-icon__circle {
+  -webkit-transform: scale(60);
+  transform: scale(60);
+  z-index: -1;
+}
+
+.navbar-toggler.menu-is-expanded .menu-icon__bar:first-child {
+  -webkit-transform: translateY(7.5px) translateY(-50%) rotate(45deg);
+  transform: translateY(7.5px) translateY(-50%) rotate(45deg);
+}
+
+.navbar-toggler.menu-is-expanded .menu-icon__bar:nth-child(2) {
+  width: 0%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+.navbar-toggler.menu-is-expanded .menu-icon__bar:last-child {
+  -webkit-transform: translateY(-7.5px) translateY(50%) rotate(-45deg);
+  transform: translateY(-7.5px) translateY(50%) rotate(-45deg);
+}
+
+.navbar-brand {
+  z-index: 200;
+}
+
+.navbar-collapse {
+  z-index: 200;
+}
+
+.custom-menu__light.navbar-is-sticky {
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.1);
+  background: #fff;
+}
+
+.navbar .container-fluid {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  h2 {
+    font-size: 30px;
+    font-weight: 700;
+  }
+
+}
+
+.button {
+  background: #007BFF;
+  color: #FFFFFF;
+  ;
+  padding: 10px 22px;
+  font-size: 15px;
+  border-radius: 20px;
+
+}
+
+.button:hover,
+.hero-button:hover,
+.event-btn:hover {
+  background: #007BFF;
+  color: #FFFFFF;
+  text-decoration: none;
+  box-shadow: 0 3px 6px rgba(0, 110, 255, 0.4);
+}
+
+.hero-button,
+.event-btn {
+  background: #2F5BE7;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: #FFFFFF;
+  ;
+  padding: 12px 18px;
+  font-size: 14px;
+  border-radius: 2px;
+}
+
+.event-btn {
+  padding: 8px 12px;
+  border-radius: 50px;
+  font-weight: bold;
+}
+
+@media (min-width: 240px) and (max-width: 400px) {
+  .ml-pic {
+    order: -1;
+  }
+    
+}
+
+.hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  min-height: 550px;
+}
+
+.hero-content {
+  margin-bottom: 50px;
+}
+
+.hero-title__group {
+  margin-bottom: 30px;
+}
+
+.hero-title {
+  font-size: 32px;
+  line-height: 37px;
+  margin-bottom: 30px;
+}
+
+.hero-title span {
+  display: block;
+  color: #1B2733;
+}
+
+.hero-form .form-control {
+  border: 1px solid rgba(47, 91, 231, 0.2);
+  padding: 14px;
+  border-right: 0;
+}
+
+.hero-figure {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+}
+
+.hero-figure img {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media only screen and (max-width: 600px) {
+  .lead {
+    font-size: 16px;
+  }
+
+  .vanish {
+    display: none;
+  }
+
+  .heading-h2 {
+    text-align: left;
+    line-height: 1.5;
+  }
+    
+}
+
+/*satvik's changes*/
+.aboutDSC__text,.ourFocus__text,.whatwedo__text,.ourTeam__text{
+    font-weight: normal;
+    line-height: 4vh;
+    font-size: 2.5vh;
+    
+}
+
+/*
+.ourFocus__img,.aboutDSC__img,.whatwedo__img{
+    height: 20vh;
+    width: 20vw;
+}
+*/
+.down__arrow{
+    height: 15vh;
+    width: 15vw;
+}
+/*
+html{
+    scroll-behavior: smooth;
+}
+*/
+.aboutDSC__title,.ourfocus__title,.whatwedo__title,.domains__title,.ourTeam__title{
+    color: #1B2733;
+  font-family: "Google Sans", sans-serif;
+    
+}
+
+.domains{
+    width: 100%;
+    height: auto;
+    
+/*    add flexbox style*/
+    display : flex;
+   flex-direction : row ;
+   justify-content : space-around;
+   flex-flow : wrap;
+}
+
+.domains .card{
+    width: 30%;
+    height: 20%;
+    margin: 20px;
+/*    padding: 20px;*/
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+/*    overflow: hidden;*/
+}
+.card__title{
+    padding-top: 2.5vh;
+    color: white;
+    font-size: 3vh;
+    font-weight: normal;
+}
+
+
+@media screen and(max-width:768px){
+    .card{
+        width: 40%;
+        height: 40%;
+    }
+   
+    .card__title{
+        font-size: 1vh;
+        
+    }
+/*
+    .aboutDSC__img, .ourFocus__img, .whatwedo__img{
+        height: 100vh;
+        width: 100vw;
+    }
+*/
+    .arrow img{
+        display: none;
+    }
+    .aboutDSC__text,.ourFocus__text,.whatwedo__text..outTeam__text{
+    font-weight: normal;
+    line-height: 2vh;
+    font-size: 2vh;
+    }
+    
+}
+@media screen and(max-width:480px){
+    .card{
+        width: 40%;
+        height: 40%;
+    }
+    .card__title{
+        font-size: 1vh;
+        
+    }
+/*
+   .ourFocus__img,.aboutDSC__img,.whatwedo__img{
+    height: 100vh;
+    width: 100vw;
+*/
+    .arrow img{
+        display: none;
+    }
+    .aboutDSC__text,.ourFocus__text,.whatwedo__text,.ourTeam__text{
+    font-weight: normal;
+    line-height: 2vh;
+    font-size: 2vh;
+}
+}
+
+}
+.domcontainer{
+    display: flex;
+    
+}
+    
+/*end s changes*/
+

@@ -1,0 +1,161 @@
+*{
+	font-family: 'Raleway', sans-serif;
+	margin : 0;
+	padding : 0;
+}
+
+body{
+	margin: 0;
+	padding: 0;
+	width: 100%;
+}
+
+.navbar{
+	background-color: white;
+	height: 60px;
+}
+
+.row{
+	margin: 0;
+	width: 100%;
+}
+
+.row1{
+	padding-top: 50px;
+	width: 100%;
+	height: 500px;
+}
+
+.row2{
+	width: 100%;
+	height: 300px;
+}
+
+.user_img{
+	height: 350px;
+	width: 350px;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 746px){
+	.user_img{
+		height: 280px!important;
+		width: 280px!important;
+	}
+}
+
+@media only screen and (max-width: 575px){
+	.user_name{
+		font-size: 30px!important;
+		margin-bottom: 0;
+	}
+	.user_email{
+		font-size: 20px!important;
+		margin-bottom: 0;
+	}
+	.user_des{
+		font-size: 20px!important;
+	}
+}
+
+@media only screen and (max-width: 701px){
+	.user_img{
+		height: 250px!important;
+		width: 250px!important;
+	}
+}
+
+@media only screen and (max-width: 425px){
+	.user_img{
+		height: 280px!important;
+		width: 280px!important;
+	}
+	.user_name{
+		font-size: 30px!important;
+	}
+}
+
+.user_name{
+	font-size: 50px;
+}
+
+.user_email{
+	font-size: 30px;
+}
+
+.user_des{
+	font-size: 30px;
+}
+
+.event_att{
+	font-size: 45px;
+}
+
+.events{
+	height: 200px;
+	width: 300px;
+	border-radius: 8%;
+	box-shadow: 0px 0px 2px 1px rgba(0, 0, 0);
+}
+
+.event1, .event2, .event3, .event4{
+	height: 100%;
+	width: 100%;
+	border-radius: 8%;
+}
+
+@media only screen and (max-width: 991px){
+	.events{
+		margin-top: 20px!important;
+	}
+	.badges{
+		margin-top: 20px!important;
+	}
+	.row3{
+		margin-top: 150px;
+	}
+}
+
+.badges_earned{
+	font-size: 45px;
+}
+
+.p-50{
+	padding-top: 50px;
+}
+
+.badges{
+	height: 250px;
+	width: 250px;
+	border-radius: 50%;
+}
+
+.badge1, .badge2, .badge3, .badge4{
+	height: 100%;
+	width: 100%;
+	border-radius: 50%;
+}
+
+@media only screen and (max-width: 576px){
+	.row3{
+		margin-top: 630px;
+	}
+}
+
+@media only screen and (max-width: 380px){
+	.badges_earned{
+		font-size: 40px;
+	}
+	.event_att{
+		font-size: 40px;
+	}
+}
+
+@media only screen and (max-width: 343px){
+	.event_att{
+		font-size: 30px;
+	}
+	.badges_earned{
+		font-size: 30px;
+	}
+}
