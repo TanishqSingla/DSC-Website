@@ -1,0 +1,142 @@
+:root {
+    --login-form-paddings: 2.5rem;
+
+    --login-color-accent-100: hsla(340, 100%, 94%, 1);
+    --login-color-accent-500: hsla(244, 79%, 52%, 1);
+    --login-color-accent-700: hsla(202, 82%, 40%, 1);
+
+    --login-color-gray-100: hsla(0, 0%, 96%, 1);
+    --login-color-gray-500: hsla(0, 0%, 61%, 1);
+    --login-color-gray-900: hsla(0, 0%, 23%, 1);
+
+    --login-font-family: 'Roboto', sans-serif;
+    --login-color-text-100: var(--login-color-gray-100);
+    --login-color-text: var(--login-color-gray-500);
+    --login-color-header: var(--login-color-gray-900);
+    --login-link-color: var(--login-color-accent-500);
+
+    --login-form-control-border: none;
+    --login-form-control-padding: var(--login-p2) var(--login-p4);
+    --login-form-control-radius: 20px;
+    --login-form-control-background: var(--login-color-gray-100);
+    --login-shadow-color: var(--login-color-gray-300);
+}
+
+.login-container {
+    display: block;
+    align-items: center;
+}
+
+.login-inner {
+    display: block;
+    height: 100vh;
+    width: 100%;
+}
+
+.login-two-pane {
+    height: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.login-two-pane > div {
+    flex: 1;
+}
+
+.login-two-pane > div:first-child {
+    display: flex;
+    align-items: center;
+    background: white;
+}
+
+.login-two-pane > div:last-child {
+    background: url('../img/bg.svg') center center no-repeat
+        rgb(255, 255, 255);
+    display: none;
+}
+
+.login-form {
+    padding: 2.5rem;
+    padding: var(--login-form-paddings);
+    background: white;
+    border-radius: 0;
+    border-radius: var(--login-form-control-radius);
+}
+
+.login-form .login-logo {
+    text-align: left;
+    color: hsla(0, 0%, 23%, 1);
+    color: var(--login-color-gray-900);
+}
+
+@media (min-width: 768px) {
+    .login-container {
+        background-color: hsla(0, 0%, 96%, 1);
+        background-color: var(--login-color-gray-100);
+    }
+
+    .login-two-pane > div:last-child {
+        display: block;
+    }
+
+    .login-container .btn-social {
+        padding: 0.25rem 1rem !important;
+        padding: var(--login-p1) var(--login-p4) !important;
+    }
+
+    .login-container .btn-social {
+        font-size: 14px;
+    }
+}
+
+.login-container .btn-social {
+    padding: 0.5rem 2rem;
+    padding: var(--login-p2) var(--login-p8);
+}
+
+/* FORMS */
+
+.login-form .form-group {
+    margin-bottom: 1rem;
+    margin-bottom: var(--login-p4);
+    background: hsla(0, 0%, 96%, 1);
+    background: var(--login-form-control-background);
+    border-radius: 0;
+    border-radius: var(--login-form-control-radius);
+    transition: box-shadow 0.3s;
+    border: 1px solid hsla(0, 0%, 96%, 1);
+    border: 1px solid var(--login-form-control-background);
+}
+
+/* BUTTONS */
+
+.login-form .btn {
+    border-radius: 20px;
+    border-radius: var(--login-form-control-radius);
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    padding: var(--login-p2) var(--login-p8);
+}
+
+.login-form .input-group .input-group-prepend + .form-control {
+    padding-left: 1.5rem;
+    padding-left: var(--login-p6);
+}
+
+.login-form .input-group .input-group-prepend {
+    display: none;
+}
+
+.login-container .line {
+    background: hsla(0, 0%, 61%, 1);
+    background: var(--login-color-gray-500);
+    height: 1px;
+    margin-top: 12px;
+    text-align: center;
+}
+.login-container .line span {
+    background: #fff;
+    padding: 8px;
+    position: relative;
+    top: -12px;
+}
