@@ -385,6 +385,49 @@ p {
     width: 20vw;
 }
 */
+.aboutDSC__img, .ourFocus__img, .whatwedo__img{
+	height: 500px;
+	width: 500px;
+}
+
+.team__img{
+	height: 300px;
+	width: 300px;
+}
+
+.webimg,.appimg{
+	height: 250px;
+	width: 250px;
+}
+
+@media only screen and (max-width: 510px) {
+	.webimg,.appimg{
+		height: 175px!important;
+		width: 175px!important;
+	}
+}
+
+@media only screen and (max-width: 530px) {
+	.aboutDSC__img, .ourFocus__img,.whatwedo__img{
+		height: 400px!important;
+		width: 400px!important;
+	}
+}
+
+@media only screen and (max-width: 433px) {
+	.aboutDSC__img, .ourFocus__img,.whatwedo__img{
+		height: 300px!important;
+		width: 300px!important;
+	}
+}
+
+@media only screen and (max-width: 339px) {
+	.aboutDSC__img, .ourFocus__img,.team__img{
+		height: 250px!important;
+		width: 250px!important;
+	}
+}
+
 .down__arrow{
     height: 15vh;
     width: 15vw;
