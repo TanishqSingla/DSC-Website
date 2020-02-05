@@ -375,7 +375,7 @@ p {
 .aboutDSC__text,.ourFocus__text,.whatwedo__text,.ourTeam__text{
     font-weight: normal;
     line-height: 4vh;
-    font-size: 2.5vh;
+    font-size: 2.6vh;
     
 }
 
@@ -491,7 +491,7 @@ html{
     .arrow img{
         display: none;
     }
-    .aboutDSC__text,.ourFocus__text,.whatwedo__text..outTeam__text{
+    .aboutDSC__text,.ourFocus__text,.whatwedo__text .outTeam__text{
     font-weight: normal;
     line-height: 2vh;
     font-size: 2vh;
@@ -522,11 +522,11 @@ html{
 }
 }
 
-}
-.domcontainer{
+
+/* .domcontainer{
     display: flex;
     
-}
+} */
     
 /*end s changes*/
 
