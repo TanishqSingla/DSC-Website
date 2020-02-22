@@ -371,12 +371,27 @@ p {
     
 }
 
-/*satvik's changes*/
 .aboutDSC__text,.ourFocus__text,.whatwedo__text,.ourTeam__text{
     font-weight: normal;
     line-height: 4vh;
     font-size: 2.6vh;
     
+}
+
+.first{
+  color: #2F5BE7;
+}
+
+.second{
+  color: red;
+}
+
+.third{
+  color: #FBBC12;
+}
+
+.fourth{
+  color: #189E59;
 }
 
 /*
