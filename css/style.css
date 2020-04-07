@@ -70,6 +70,12 @@ body{
         height: 250px;
         width: 300px;
     }
+    #aboutDSC {
+        padding-left: 3%;
+    }
+    #landingHeading, #landingPara , #aboutHeading, #aboutPara{
+        padding-left: 1%;
+    }
 }
 
 @media only screen and (max-width: 768px){
