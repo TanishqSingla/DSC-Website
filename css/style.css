@@ -95,3 +95,24 @@ body{
     height: 700px;
 }
 
+.card {
+    margin: 20px;
+    box-sizing: border-box;
+    text-align: center;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.card-title{
+    padding-top: 2.5vh;
+    color: white;
+    font-size: 4vh;
+    font-weight: normal;
+}
+
+.web {
+    background-color: #4285F4;
+}
+
+.app{
+    background-color: #DB4437;
+}
