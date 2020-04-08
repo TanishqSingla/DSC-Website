@@ -122,3 +122,17 @@ body{
 .app{
     background-color: #DB4437;
 }
+
+.custom-button {
+    background-color: black;
+    color: white;
+    font-size: 4vh;
+    border: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+}
+
+.custom-button:hover {
+    border: 2px solid black;
+    background-color: #ffffff;
+    color: black;
+}
