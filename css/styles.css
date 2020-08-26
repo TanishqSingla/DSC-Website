@@ -17,6 +17,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
+  scroll-behavior: smooth;
 }
 
 :root {
@@ -113,6 +114,7 @@ p {
   font-weight: normal;
   line-height: 29px;
   text-align: left;
+  padding-bottom: 5%;
 }
 
 .custom-menu {
@@ -400,6 +402,11 @@ p {
     width: 20vw;
 }
 */
+
+.aboutDSC__text {
+  padding: 0 2%;
+}
+
 .aboutDSC__img, .ourFocus__img, .whatwedo__img{
 	height: 500px;
 	width: 500px;
@@ -447,18 +454,19 @@ p {
     height: 15vh;
     width: 15vw;
 }
-/*
-html{
-    scroll-behavior: smooth;
-}
-*/
+
 .aboutDSC__title,.ourfocus__title,.whatwedo__title,.domains__title,.ourTeam__title{
     color: #1B2733;
   font-family: "Google Sans", sans-serif;
     
 }
 
+#domains__id {
+  padding-top: 68px;
+}
+
 .domains{
+    padding-top: 5%;
     width: 100%;
     height: auto;
     
@@ -476,7 +484,7 @@ html{
 /*    padding: 20px;*/
     box-sizing: border-box;
     text-align: center;
-    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+    box-shadow: 0 10px 40px rgba(0,0,0,0.2);
 /*    overflow: hidden;*/
 }
 .card__title{
@@ -486,6 +494,9 @@ html{
     font-weight: normal;
 }
 
+.domcontainer {
+  padding-top: 68px;
+}
 
 @media screen and(max-width:768px){
     .card{
